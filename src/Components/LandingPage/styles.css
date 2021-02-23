@@ -23,6 +23,7 @@
 .picture {
   height: 220px;
   margin-top: 4em;
+  margin-bottom: 1em;
   border-radius: 50%;
 }
 
@@ -41,30 +42,34 @@
   font-family: "Cabin", sans-serif;
   color: #9796f0;
   padding: 13px 13px 0 13px;
-  margin-bottom: 14px;
+  margin: auto;
+  letter-spacing: 2px;
+}
+
+.banner-text > h4 {
+  color: #fbc7d4;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .banner-text > hr {
-  border-top: 5px dotted #fbc7d4;
+  border-top: 5px dotted #9796f0;
   width: 30%;
   margin: auto;
 }
 
 .banner-text > p {
-  color: #9796f0;
+  color: #fbc7d4;
   font-size: 18px;
   padding: 1em;
+  margin: auto;
 }
 
 .social {
   display: flex;
   justify-content: space-between;
   width: 50%;
-  margin: auto;
-}
-
-.social > i {
-  color: #fbc7d4;
-  font-size: 5em;
-  padding: 8px;
+  margin: 5px auto;
+  height: 5em;
 }

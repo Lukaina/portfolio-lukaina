@@ -2,7 +2,10 @@ import React, {Component} from 'react';
 import { Grid, Cell } from 'react-mdl';
 import '../LandingPage/styles.css';
 import Image from './picture.jpg';
-
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import CodeSharpIcon from '@material-ui/icons/CodeSharp';
 class Landing extends Component {
     render() {
         return(
@@ -12,7 +15,10 @@ class Landing extends Component {
                         <img src={Image} alt="My picture" className="picture"/>
 
                         <div className="banner-text">
-                            <h1>Women Techmakers Ambassador · Frontend Apprentice · Philosophy Student · Illustrator</h1>
+                            
+                            <h1>Hello World! I'm Verónica Alcaraz</h1>
+
+                            <h4>Women Techmakers Ambassador · Frontend Apprentice · Philosophy Student · Illustrator</h4>
 
                             <hr/>
 
@@ -21,19 +27,19 @@ class Landing extends Component {
                             <div className="social">
 
                                 <a href="https://twitter.com/Lukaina_co" rel="noopener noreferrer" target="_blank">
-                                    <i className="fab fa-twitter-square" aria-hidden="true" />
+                                    <TwitterIcon color="primary" aria-label="Twitter" style={{ fontSize: 50 }} />
                                 </a>
 
                                 <a href="https://www.linkedin.com/in/ver%C3%B3nica-alcaraz-machado-5114561aa/" rel="noopener noreferrer" target="_blank">
-                                    <i className="fab fa-linkedin" aria-hidden="true" />
+                                    <LinkedInIcon color="primary" aria-label="LinkedIn" style={{ fontSize: 50 }} />
                                 </a>
 
                                 <a href="https://github.com/Lukaina" rel="noopener noreferrer" target="_blank">
-                                    <i className="fab fa-github-alt" aria-hidden="true" />
+                                    <GitHubIcon color="primary" aria-label="GitHub" style={{ fontSize: 50 }} />
                                 </a>
-
+                            
                                 <a href="https://codepen.io/veroalcaraz" rel="noopener noreferrer" target="_blank">
-                                    <i class="fab fa-codepen" aria-hidden="true" />
+                                    <CodeSharpIcon color="primary" aria-label="CodePen" style={{ fontSize: 50 }}/>
                                 </a>
                             </div>
                         </div>
