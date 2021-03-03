@@ -8,10 +8,22 @@ class Projects extends Component {
     }
 
     toggleCategories() {
-        
+
         if(this.state.activeTab === 0) {
             return(
                 <div><h1>This is HTML & CSS</h1></div>
+            )
+        }else if(this.state.activeTab === 1) {
+            return(
+                <div><h1>This is HTML & SASS</h1></div>
+            )
+        }else if(this.state.activeTab === 2) {
+            return(
+                <div><h1>This is JavaScript</h1></div>
+            )
+        }else if(this.state.activeTab === 3) {
+            return(
+                <div><h1>This is React</h1></div>
             )
         }
     }
