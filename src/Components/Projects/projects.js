@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { Tabs, Tab } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
+import './styles.css';
 
 class Projects extends Component {
     constructor(props) {
@@ -11,7 +12,46 @@ class Projects extends Component {
 
         if(this.state.activeTab === 0) {
             return(
-                <div><h1>This is HTML & CSS</h1></div>
+                <div className="projects-grid">
+                    {/* Project 1 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png) center / cover'}}>Project 1</CardTitle>
+                            <CardText>
+                                lorem impsuhkhjjhj hjhghjghjg gjgjhgjhghj
+                            </CardText>
+                            <CardActions border>
+                                <Button colored>GitHub</Button>
+                                <Button colored>Codepen</Button>
+                                <Button colored>Demo</Button>
+                            </CardActions>
+                    </Card>
+
+                    {/* Project 2 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png) center / cover'}}>Project 1</CardTitle>
+                            <CardText>
+                                lorem impsuhkhjjhj hjhghjghjg gjgjhgjhghj
+                            </CardText>
+                            <CardActions border>
+                                <Button colored>GitHub</Button>
+                                <Button colored>Codepen</Button>
+                                <Button colored>Demo</Button>
+                            </CardActions>
+                    </Card>
+
+                    {/* Project 3 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png) center / cover'}}>Project 1</CardTitle>
+                            <CardText>
+                                lorem impsuhkhjjhj hjhghjghjg gjgjhgjhghj
+                            </CardText>
+                            <CardActions border>
+                                <Button colored>GitHub</Button>
+                                <Button colored>Codepen</Button>
+                                <Button colored>Demo</Button>
+                            </CardActions>
+                    </Card>
+                </div>
             )
         }else if(this.state.activeTab === 1) {
             return(
@@ -38,9 +78,12 @@ class Projects extends Component {
                     <Tab>React</Tab>
                 </Tabs>
 
-                <section className="projects-grid">
-                    {this.toggleCategories()}
-                </section>
+                    <Grid>
+                        <Cell col={12}>
+                            <div className="content">{this.toggleCategories()}</div>
+                        </Cell>
+                    </Grid>
+                    
             </div>
         )
     }
